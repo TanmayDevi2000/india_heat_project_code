@@ -1,6 +1,6 @@
-# Migration and destination-choice analysis (October 2026)
+# Migration and destination-choice analysis (October and November 2026)
 
-This folder holds the code behind the 11 and 15 October summary notes (`heat_project_summary_2026-10-11.pdf` and `heat_project_summary_2026-10-15.pdf`). The hedonic corrections are the previous commit on this branch, in the pipeline files at the repository root.
+This folder holds the code behind the 11 and 15 October summary notes (`heat_project_summary_2026-10-11.pdf` and `heat_project_summary_2026-10-15.pdf`) and the 22 November age split. The hedonic corrections are the first commit on this branch, in the pipeline files at the repository root.
 
 ## Layout
 
@@ -12,6 +12,7 @@ This folder holds the code behind the 11 and 15 October summary notes (`heat_pro
   - `nots/`: the environment and job scripts for that run on NOTS.
   - `heat_project_summary_figures/`: figure scripts for the 11 October note.
 - `2026-10-15_steps/` holds steps 1 to 8, which answer James's 14 October questions. Each step folder has a README on what the step does, what it found and the checks run, and `2026-10-15_steps/README.md` sums them up in one table.
+- `2026-11-22_age_split/` (step 5c) asks whether older migrants avoid heat more than younger ones and reweights the survey migrants to urban men aged 15 to 64. It reruns step 5b first as a check and needs `2026-10-15_steps/step1_inputs/mig_build_v2.R` next to the script.
 
 ## Files kept on Box
 
